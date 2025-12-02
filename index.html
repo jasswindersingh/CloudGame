@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasswinder Singh | Gaming Technology Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#080c0c', /* Dark Teal/Green Base */
+                        'accent-primary': '#00ff7f', /* Electric Green */
+                        'accent-secondary': '#ff33cc', /* Cyber Pink/Magenta */
+                        'card-bg': '#1b2323', /* Dark Teal Card Background */
+                    },
+                    boxShadow: {
+                        'glow': '0 0 10px #00ff7f, 0 0 25px #00ff7f', /* Green Glow */
+                        'card-glow': '0 0 8px rgba(0, 255, 127, 0.5)', /* Green Card Glow */
+                        'button-glow': '0 0 10px #ff33cc, 0 0 25px #ff33cc', /* Pink Glow for buttons */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the intense electric green glow effect */
+        .glow-text {
+            text-shadow: 0 0 4px #fff, 0 0 10px #00ff7f, 0 0 15px #00ff7f;
+        }
+
+        /* Subtle pulsating effect for the hero section */
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(0, 255, 127, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 255, 127, 0.7);
+            }
+        }
+
+        .hero-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        /* Responsive spacing for card grid */
+        @media (min-width: 640px) {
+            .card-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="bg-primary-dark text-white min-h-screen font-sans">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm border-b-2 border-accent-primary/50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <div class="text-2xl font-extrabold tracking-wider glow-text text-accent-primary">
+                JASSWINDER SINGH | GAMING TECH
+            </div>
+            <div class="space-x-6 hidden sm:flex font-semibold">
+                <a href="#hero" class="text-white hover:text-accent-primary transition duration-300">Home</a>
+                <a href="#projects" class="text-white hover:text-accent-primary transition duration-300">Projects</a>
+                <a href="#skills" class="text-white hover:text-accent-primary transition duration-300">Skills</a>
+                <a href="#about" class="text-white hover:text-accent-primary transition duration-300">Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20 border-4 border-accent-secondary/50 rounded-3xl hero-glow bg-card-bg/50 mb-16">
+            <h1 class="text-5xl sm:text-7xl font-black tracking-tighter mb-4 glow-text text-accent-primary">
+                CYBERNETIC GAME DEVELOPMENT
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-4xl mx-auto">
+                A technical portfolio showcasing development expertise in Unity, C#, and high-performance 2D/VR gaming projects, built by Jasswinder Singh.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="#projects" class="px-8 py-3 bg-accent-primary text-primary-dark font-black rounded-xl transition duration-300 hover:bg-accent-primary/80 shadow-glow hover:scale-105">
+                    Explore Projects
+                </a>
+                <a href="#about" class="px-8 py-3 border-2 border-accent-secondary text-accent-secondary font-bold rounded-xl transition duration-300 hover:bg-accent-secondary/20 hover:scale-105 shadow-button-glow">
+                    View Credentials
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 border-b-2 border-accent-primary/50 pb-2 text-accent-primary">Academic Gaming Projects</h2>
+
+            <div class="card-grid grid gap-8">
+
+                <!-- Project 1: Blastic 2D (Primary Focus) -->
+                <div class="bg-card-bg border border-accent-secondary/50 rounded-xl p-6 shadow-button-glow hover:shadow-glow transition duration-300 hover:scale-[1.02]">
+                    <h3 class="text-2xl font-bold mb-2 text-accent-primary">Blastic2D (2D Action Game)</h3>
+                    <p class="text-sm text-accent-secondary mb-4 font-extrabold">Requirement: Cloud-Hosted Game Project</p>
+                    <p class="text-gray-300 mb-4">A fast-paced, action-packed 2D game featuring simple controls and vibrant visuals. Players navigate dynamic levels with fluid movement mechanics, suitable for both casual and dedicated gamers.</p>
+                    <a href="./mini-golf-game/index.html" class="inline-block px-4 py-2 bg-accent-primary/90 text-primary-dark text-sm font-semibold rounded-lg hover:bg-accent-primary transition duration-300">
+                        Launch Project Link
+                    </a>
+                </div>
+
+                <!-- Project 2: Battle of Cerium: Strike Command -->
+                <div class="bg-card-bg border border-accent-secondary/50 rounded-xl p-6 shadow-button-glow hover:shadow-glow transition duration-300 hover:scale-[1.02]">
+                    <h3 class="text-2xl font-bold mb-2 text-accent-secondary">Battle of Cerium: Strike Command</h3>
+                    <p class="text-sm text-gray-400 mb-4">Tenure: Oct '24 - Jan '25</p>
+                    <p class="text-gray-300">Aim: The player controls a space fighter to complete objectives in a vast alien environment, focusing on strategic command and space combat.</p>
+                    <a href="#" class="inline-block px-4 py-2 border border-accent-secondary text-accent-secondary text-sm font-semibold rounded-lg mt-4 hover:bg-accent-secondary/20 transition duration-300">
+                        View Details
+                    </a>
+                </div>
+
+                <!-- Project 3: Base-Ball VR Game -->
+                <div class="bg-card-bg border border-accent-secondary/50 rounded-xl p-6 shadow-button-glow hover:shadow-glow transition duration-300 hover:scale-[1.02]">
+                    <h3 class="text-2xl font-bold mb-2 text-accent-secondary">Base-Ball VR Game</h3>
+                    <p class="text-sm text-gray-400 mb-4">Tenure: Feb '25 - Mar '26</p>
+                    <p class="text-gray-300">An immersive sports simulation designed to bring the excitement and challenge of baseball into a virtual reality environment using VR hardware.</p>
+                    <a href="#" class="inline-block px-4 py-2 border border-accent-secondary text-accent-secondary text-sm font-semibold rounded-lg mt-4 hover:bg-accent-secondary/20 transition duration-300">
+                        View Details
+                    </a>
+                </div>
+
+                <!-- Project 4: Mythical Dungeon -->
+                <div class="bg-card-bg border border-accent-secondary/50 rounded-xl p-6 shadow-button-glow hover:shadow-glow transition duration-300 hover:scale-[1.02]">
+                    <h3 class="text-2xl font-bold mb-2 text-accent-secondary">Mythical Dungeon</h3>
+                    <p class="text-sm text-gray-400 mb-4">Tenure: Feb '25 - Mar '26</p>
+                    <p class="text-gray-300">A third-person dungeon-crawling action-adventure game for ancient knowledge discovery. Software used: Unity Game engine.</p>
+                    <a href="#" class="inline-block px-4 py-2 border border-accent-secondary text-accent-secondary text-sm font-semibold rounded-lg mt-4 hover:bg-accent-secondary/20 transition duration-300">
+                        View Details
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 border-b-2 border-accent-primary/50 pb-2 text-accent-primary">Technical Skills & Certifications</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Unity / C#</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Python / C++</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">UI/UX Designing (Canva)</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">HTML/CSS (Web Dev)</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">MATLAB / Oracle AI</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Human Computer Interaction (NPTEL)</div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="mt-16 max-w-3xl mx-auto">
+                 <h3 class="text-2xl font-bold mb-4 text-center text-accent-primary border-b border-accent-primary/30 pb-2">Achievements & Roles</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 text-lg">
+                    <li>Top 5 finalist in Innofusion 2.0 Hackathon (UEM College, Kolkata).</li>
+                    <li>Completed 100 days of coding challenge.</li>
+                    <li>IPSC Boxing Gold medalist and Basketball District Winner (2021).</li>
+                    <li>Core Member of AdVITya, Gaming club, and UI/UX club.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Author Section -->
+        <section id="about" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 border-b-2 border-accent-primary/50 pb-2 text-accent-primary">Student Profile</h2>
+            <div class="bg-card-bg p-8 rounded-xl border-4 border-accent-secondary/50 shadow-button-glow max-w-xl mx-auto text-center">
+                <p class="text-3xl font-extrabold text-accent-primary mb-2">Jasswinder Singh</p>
+                <p class="text-2xl font-extrabold text-white mb-6">23BCG10036</p>
+                <div class="text-left space-y-3 text-gray-300">
+                    <p><span class="font-bold text-accent-secondary">Branch:</span> Gaming Technology</p>
+                    <p><span class="font-bold text-accent-secondary">Current CGPA:</span> 8.90/10</p>
+                    <p><span class="font-bold text-accent-secondary">Email:</span> jasswinder3385@gmail.com</p>
+                    <p class="pt-4"><a href="https://www.linkedin.com/in/jasswinder-singh-256b8932b/" target="_blank" class="text-accent-primary hover:underline transition duration-300 font-semibold">View LinkedIn Profile &rarr;</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-card-bg/80 border-t-2 border-accent-primary/20 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Jasswinder Singh | Reg No: 23BCG10036</p>
+            <p>Gaming Technology Portfolio showcased on GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
