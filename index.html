@@ -1,3 +1,4 @@
+--- START OF CODE ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Jasswinder Singh | Gaming Technology Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind for custom theme -->
+    <!-- Configure Tailwind for Cyberpunk Green/Pink theme -->
     <script>
         tailwind.config = {
             theme: {
@@ -19,7 +20,6 @@
                     },
                     boxShadow: {
                         'glow': '0 0 10px #00ff7f, 0 0 25px #00ff7f', /* Green Glow */
-                        'card-glow': '0 0 8px rgba(0, 255, 127, 0.5)', /* Green Card Glow */
                         'button-glow': '0 0 10px #ff33cc, 0 0 25px #ff33cc', /* Pink Glow for buttons */
                     },
                     fontFamily: {
@@ -100,12 +100,13 @@
 
             <div class="card-grid grid gap-8">
 
-                <!-- Project 1: Blastic 2D (Primary Focus) -->
+                <!-- Project 1: Blastic 2D (Primary Focus / Assignment Game) -->
                 <div class="bg-card-bg border border-accent-secondary/50 rounded-xl p-6 shadow-button-glow hover:shadow-glow transition duration-300 hover:scale-[1.02]">
                     <h3 class="text-2xl font-bold mb-2 text-accent-primary">Blastic2D (2D Action Game)</h3>
                     <p class="text-sm text-accent-secondary mb-4 font-extrabold">Requirement: Cloud-Hosted Game Project</p>
-                    <p class="text-gray-300 mb-4">A fast-paced, action-packed 2D game featuring simple controls and vibrant visuals. Players navigate dynamic levels with fluid movement mechanics, suitable for both casual and dedicated gamers.</p>
-                    <a href="./mini-golf-game/index.html" class="inline-block px-4 py-2 bg-accent-primary/90 text-primary-dark text-sm font-semibold rounded-lg hover:bg-accent-primary transition duration-300">
+                    <p class="text-gray-300 mb-4">A fast-paced, action-packed 2D game featuring fluid movement mechanics and responsive controls, uploaded from the Unity WebGL build.</p>
+                    <!-- FIX: Link points to the 'field' folder where the WebGL build was uploaded -->
+                    <a href="./field/index.html" class="inline-block px-4 py-2 bg-accent-primary/90 text-primary-dark text-sm font-semibold rounded-lg hover:bg-accent-primary transition duration-300">
                         Launch Project Link
                     </a>
                 </div>
@@ -147,7 +148,7 @@
             <h2 class="text-4xl font-bold text-center mb-12 border-b-2 border-accent-primary/50 pb-2 text-accent-primary">Technical Skills & Certifications</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Unity / C#</div>
-                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Python / C++</div>
+                <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">Python / C++ / CPP</div>
                 <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">UI/UX Designing (Canva)</div>
                 <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">HTML/CSS (Web Dev)</div>
                 <div class="p-4 rounded-lg bg-accent-secondary/10 border border-accent-secondary text-accent-secondary font-semibold transition duration-300 hover:bg-accent-secondary/30">MATLAB / Oracle AI</div>
